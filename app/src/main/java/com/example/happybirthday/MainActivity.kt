@@ -33,7 +33,8 @@ class MainActivity : ComponentActivity() {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     GreetingImage(
                         stringResource(R.string.happy_birthday_text),
-                        stringResource(R.string.signature_text)
+                        stringResource(R.string.signature_text),
+                        modifier = Modifier.padding(innerPadding)
                     )
                 }
             }
